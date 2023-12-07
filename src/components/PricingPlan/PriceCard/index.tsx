@@ -29,7 +29,7 @@ const PriceCard: React.FC<PriceCardProps> = ({
         <span className="sr-only">제목</span>
         <h2
           className={twMerge(
-            "text-lg font-semibold text-black",
+            "line-clamp-1 break-all text-lg font-semibold text-black",
             isSelected && "text-indigo-600"
           )}
         >
@@ -42,7 +42,7 @@ const PriceCard: React.FC<PriceCardProps> = ({
       </section>
       <section>
         <span className="sr-only">가격</span>
-        <p className="mt-[24px] text-black">
+        <p className="mt-[24px] break-words text-black">
           <span className="text-4xl font-bold">${price.toLocaleString()}</span>
           <span className="text-sm font-semibold">/{pricePeriod}</span>
         </p>

@@ -7,12 +7,12 @@ interface PricingListProps {
 
 const PricingList: React.FC<PricingListProps> = ({ selectedPricePeriod }) => {
   return (
-    <ul className="mt-10 grid grid-cols-1 gap-8">
+    <ul className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <li>
         <PriceCard
-          title="Title"
+          title={"Title"}
           description="this is description"
-          price={100}
+          price={Number.MAX_SAFE_INTEGER}
           pricePeriod={selectedPricePeriod}
           contents={["hello", "world", "!!"]}
           isSelected
