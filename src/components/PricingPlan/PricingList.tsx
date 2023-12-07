@@ -12,7 +12,7 @@ const PricingList: React.FC<PricingListProps> = ({ selectedPricePeriod }) => {
         <PriceCard
           title={"Title"}
           description="this is description"
-          price={Number.MAX_SAFE_INTEGER}
+          price={100}
           pricePeriod={selectedPricePeriod}
           contents={["hello", "world", "!!"]}
           isSelected
